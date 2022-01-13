@@ -42,4 +42,5 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 EXPOSE 22 21000 21118
 
-CMD ["/usr/sbin/sshd", "-D", "-o", "ListenAddress=0.0.0.0"]
+ENTRYPOINT ["/usr/sbin/sshd", "-D", "-o", "ListenAddress=0.0.0.0"]
+
