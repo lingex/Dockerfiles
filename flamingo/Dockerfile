@@ -3,8 +3,6 @@ MAINTAINER Lingex <lingex@outlook.com>
 LABEL Description="For build & run flamingo: https://github.com/balloonwj/flamingo"
 WORKDIR /work
 
-ADD . /work
-
 ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && apt-get install -y \

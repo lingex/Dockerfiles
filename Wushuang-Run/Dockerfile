@@ -3,8 +3,6 @@ MAINTAINER Lingex <lingex@outlook.com>
 LABEL Description="Image for running ws server"
 WORKDIR /work
 
-ADD . /work
-
 ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && apt-get install -y \

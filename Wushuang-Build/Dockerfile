@@ -3,7 +3,7 @@ MAINTAINER Lingex <lingex@outlook.com>
 LABEL Description="Image for build and run ws projects"
 WORKDIR /work
 
-ADD . /work
+#ADD ./work
 
 ARG DEBIAN_FRONTEND=noninteractive
 
